@@ -2,18 +2,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#F5F1EC] font-sans dark:bg-studio-950">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-[#F5F1EC] dark:bg-studio-950 sm:items-start">
+    <div className="flex min-h-screen items-center justify-center bg-[#F5F1EC] font-sans dark:bg-studio-900">
+      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16  dark:bg-studio-900 sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src="/studio.svg"
           alt="Next.js logo"
-          width={100}
-          height={20}
+          width={120}
+          height={40}
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-studio-200">
+          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-studio-950 dark:text-studio-200">
             To get started, edit your *.psd file using channel.
           </h1>
           <p className="max-w-md text-lg leading-8 text-studio-600 dark:text-studio-400">
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-studio-950 dark:hover:bg-studio-200 md:w-[158px]"
+            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-studio-900 dark:hover:bg-studio-200 md:w-[158px]"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
