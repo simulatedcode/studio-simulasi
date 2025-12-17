@@ -6,10 +6,10 @@ export default function Home() {
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-[#F5F1EC] dark:bg-studio-950 sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src="/studio.svg"
           alt="Next.js logo"
-          width={100}
-          height={20}
+          width={120}
+          height={40}
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
