@@ -7,6 +7,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'mobile': '640px',
+        'ipad': '768px',
+        'desktop': '1280px',
+      },
+      maxWidth: {
+        'content': '1440px',
+        'screen-3xl': '1920px',
+      },
       colors: {
         studio: {
           50: 'hsl(240 52% 95.1%)',
@@ -21,6 +30,9 @@ const config: Config = {
           900: 'hsl(240 50% 11%)',
           950: 'hsl(240 52% 4.9%)',
         }
+      },
+      fontFamily: {
+        sans: ['var(--cds-typeface)'],
       }
     }
   }

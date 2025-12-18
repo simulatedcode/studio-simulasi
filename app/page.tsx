@@ -2,20 +2,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#F5F1EC] font-sans dark:bg-studio-900">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16  dark:bg-studio-900 sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/studio.svg"
-          alt="Next.js logo"
-          width={120}
-          height={40}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-studio-950 dark:text-studio-200">
+    <div className="flex min-h-screen items-center justify-center bg-[#F5F1EC] font-sans dark:bg-studio-900 mx-auto max-w-screen-3xl">
+      <main className="grid min-h-screen w-full max-w-content grid-cols-4 items-center justify-between gap-x-4 px-8 py-24 dark:bg-studio-900 sm:items-start md:grid-cols-8 landscape:py-6 desktop:grid-cols-12 md:landscape:py-24">
+        <div className="col-span-4 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left md:col-span-8 desktop:col-span-12">
+          <h1 className="max-w-sm pb-24 text-2xl font-extrabold landscape:pb-6 md:landscape:pb-24 sm:text-5xl">SIMULASI Studio</h1>
+          <h2 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-studio-950 dark:text-studio-200">
             To get started, edit your *.psd file using channel.
-          </h1>
+          </h2>
           <p className="max-w-md text-lg leading-8 text-studio-600 dark:text-studio-400">
             Looking for a starting point or more instructions? Head over to{" "}
             <a
@@ -34,7 +27,7 @@ export default function Home() {
             center.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+        <div className="col-span-4 flex flex-col gap-4 pt-8 text-base font-medium landscape:flex-row landscape:pt-0 sm:flex-row sm:pt-8 md:col-span-8 md:flex-row md:pt-8 desktop:col-span-12">
           <a
             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-studio-900 dark:hover:bg-studio-200 md:w-[158px]"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
