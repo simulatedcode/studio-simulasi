@@ -4,12 +4,12 @@
 :root {
   --cds-typeface: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   --cds-typeface-mono: 'IBM Plex Mono', 'Roboto Mono', monospace;
-  
+
   --font-sans: var(--cds-typeface), var(--font-geist-sans);
   --font-mono: var(--cds-typeface-mono), var(--font-geist-mono);
-  
-  --background: #ffffff;
-  --foreground: #18184d;
+
+  --background: #ececf9;
+  --foreground: #0e0e2a;
 }
 
 @theme inline {
@@ -19,10 +19,24 @@
   --font-mono: var(--font-mono);
 }
 
+@theme {
+  --color-studio-50: #ececf9;
+  --color-studio-100: #dcdcf4;
+  --color-studio-200: #b6b6e7;
+  --color-studio-300: #9494dc;
+  --color-studio-400: #7171d0;
+  --color-studio-500: #4f4fc5;
+  --color-studio-600: #3838aa;
+  --color-studio-700: #2a2a7f;
+  --color-studio-800: #1c1c54;
+  --color-studio-900: #0e0e2a;
+  --color-studio-950: #080817;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #18184d;
-    --foreground: #ededed;
+    --background: #0e0e2a;
+    --foreground: #ececf9;
   }
 }
 
@@ -30,4 +44,65 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+}
+
+/* Swup transitions */
+html.is-animating #swup {
+  transition: opacity 250ms ease-in-out;
+  opacity: 0;
+}
+
+html.is-leaving #swup {
+  opacity: 0;
+}
+
+/* Mobile menu slide animation */
+@keyframes menuSlideRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-menu-slide-right {
+  animation: menuSlideRight 0.4s ease-out forwards;
+}
+
+@keyframes menuSlideOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.animate-menu-slide-out {
+  animation: menuSlideOut 0.4s ease-in forwards;
+}
+
+/* Lenis styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
