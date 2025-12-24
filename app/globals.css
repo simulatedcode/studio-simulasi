@@ -33,12 +33,7 @@
   --color-studio-950: #080817;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0e0e2a;
-    --foreground: #ececf9;
-  }
-}
+
 
 body {
   background: var(--background);

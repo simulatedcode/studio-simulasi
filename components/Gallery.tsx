@@ -49,7 +49,7 @@ const Gallery = () => {
                 {galleryItems.map((item) => (
                     <div
                         key={item.id}
-                        className="group relative overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl dark:border-studio-800 dark:bg-studio-900"
+                        className="group relative overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl"
                     >
                         {/* Aspect Ratio Container for consistency */}
                         <div className="relative aspect-square overflow-hidden">
@@ -63,10 +63,10 @@ const Gallery = () => {
                         </div>
 
                         <div className="p-4">
-                            <span className="text-[10px] font-bold uppercase tracking-wider text-studio-500 dark:text-studio-400">
+                            <span className="text-[10px] font-bold uppercase tracking-wider text-studio-500">
                                 {item.category}
                             </span>
-                            <h3 className="mt-1 text-base font-semibold text-zinc-900 dark:text-white">
+                            <h3 className="mt-1 text-base font-semibold text-zinc-900">
                                 {item.title}
                             </h3>
                         </div>

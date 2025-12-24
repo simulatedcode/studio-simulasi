@@ -3,8 +3,8 @@ import Gallery from "@/components/Gallery";
 
 export default function DesignPage() {
   return (
-    <main className="relative w-full z-10 min-h-screen mx-auto max-w-screen-3xl bg-zinc-50 dark:bg-studio-900">
-      <div className="mx-auto max-w-content px-8 sm:px-0">
+    <main className="relative w-full z-10 min-h-screen mx-auto max-w-screen-3xl">
+      <div className="mx-auto max-w-content px-8 sm:px-8">
         <section className="relative w-full grid grid-cols-1 md:grid-cols-2 py-16 md:py-24 gap-y-8 md:gap-y-12 text-inverse items-start gap-x-gutter">
           <div className="font-semibold text-6xl">Design</div>
           <div className="flex flex-col gap-y-4">
@@ -15,7 +15,7 @@ export default function DesignPage() {
         </section>
 
         <section className="pb-24">
-          <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-8">Featured Projects</h2>
+          <h2 className="text-2xl font-bold text-zinc-900 mb-8">Featured Projects</h2>
           <Gallery />
         </section>
       </div>

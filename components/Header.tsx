@@ -71,24 +71,24 @@ export default function Header() {
 
   return (
     <div
-      className={`w-full max-w-screen-3xl mx-auto items-center bg-studio-50 dark:bg-studio-900 sticky top-0 z-50 transition-transform duration-300 ${(isMenuOpen || isClosing) ? "translate-y-0" : isVisible ? "translate-y-0" : "-translate-y-full"
+      className={`w-full max-w-screen-3xl mx-auto items-center bg-studio-50 sticky top-0 z-50 transition-transform duration-300 ${(isMenuOpen || isClosing) ? "translate-y-0" : isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
     >
       <div className="px-10 w-full h-full items-center">
         <div className="flex items-center justify-between h-20 w-full max-w-content mx-auto">
           {/* Logo */}
           <div className="z-50 relative flex items-center h-4">
-            <Link href="/" className="text-xl font-black tracking-tighter text-studio-950 dark:text-studio-50">
+            <Link href="/" className="text-xl font-black tracking-tighter text-studio-950">
               SIMULASI Studio
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-8 items-center text-lg font-medium ">
-            <Link href="/#work" className="hover:text-studio-400 text-studio-900 dark:text-studio-200 transition-colors">Work</Link>
-            <Link href="/#process" className="hover:text-studio-400 text-studio-900 dark:text-studio-200 transition-colors">Process</Link>
-            <Link href="/design" className="hover:text-studio-400 text-studio-900 dark:text-studio-200 transition-colors">Design</Link>
-            <Link href="/about" className="hover:text-studio-400 text-studio-900 dark:text-studio-200 transition-colors">About</Link>
+            <Link href="/#work" className="hover:text-studio-400 text-studio-900 transition-colors">Work</Link>
+            <Link href="/#process" className="hover:text-studio-400 text-studio-900 transition-colors">Process</Link>
+            <Link href="/design" className="hover:text-studio-400 text-studio-900 transition-colors">Design</Link>
+            <Link href="/about" className="hover:text-studio-400 text-studio-900 transition-colors">About</Link>
           </nav>
 
           {/* Mobile Menu Button */}

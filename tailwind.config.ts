@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss"
 
 const config: Config = {
+  darkMode: "media",
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -64,6 +65,25 @@ const config: Config = {
           900: 'hsl(240 50% 11%)',
           950: 'hsl(240 48.4% 6.1%)',
         }
+      },
+      keyframes: {
+        'squeegee-pull': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        'ink-reveal': {
+          '0%': { clipPath: 'inset(0 100% 0 0)' },
+          '100%': { clipPath: 'inset(0 0 0 0)' },
+        },
+        'layer-separate': {
+          '0%': { transform: 'translateY(0) scale(1)', opacity: '1' },
+          '100%': { transform: 'translateY(-20px) scale(0.95)', opacity: '0.8' },
+        },
+      },
+      animation: {
+        'squeegee-pull': 'squeegee-pull 2s ease-in-out',
+        'ink-reveal': 'ink-reveal 2s ease-in-out',
+        'layer-separate': 'layer-separate 0.3s ease-out forwards',
       }
     },
     fontFamily: {

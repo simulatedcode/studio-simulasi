@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   description: "Artist-run Screen printing studio",
 };
 
+export const viewport = {
+  themeColor: "#ececf9",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

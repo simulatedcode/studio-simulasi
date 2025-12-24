@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main className="relative min-h-screen w-full bg-studio-900 mx-auto max-w-screen-3xl">
-      <div className="mx-auto max-w-content px-6 md:px-0">
+    <main className="relative min-h-screen w-full mx-auto max-w-screen-3xl">
+      <div className="mx-auto max-w-content px-8 sm:px-8">
 
         {/* Main Grid Section: 1:1 Image + Text Content */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 py-16 md:py-24 items-start">
 
           {/* Left Column: 1:1 Main Image */}
-          <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-studio-800">
+          <div className="relative aspect-square w-full overflow-hidden rounded-xl ">
             <Image
               src="/hero_desktop.png"
               alt="Simulasi Studio Main"
@@ -17,7 +17,7 @@ export default function AboutPage() {
               className="object-cover opacity-80"
             />
             {/* Visual notation for technical feel */}
-            <div className="absolute top-4 left-4 text-[10px] font-mono text-studio-400 uppercase tracking-widest">
+            <div className="absolute top-4 left-4 text-[10px] font-mono text-studio-600 uppercase tracking-widest">
               Primary_Asset // 1:1_Aspect
             </div>
           </div>
@@ -25,13 +25,13 @@ export default function AboutPage() {
           {/* Right Column: Text Content with 2-Column subgrid */}
           <div className="flex flex-col gap-y-10">
             <div>
-              <h1 className="text-6xl md:text-7xl font-black tracking-tighter text-white uppercase leading-none">
+              <h1 className="text-6xl md:text-7xl font-black tracking-tighter  uppercase leading-none">
                 ABOUT <br />
                 <span className="text-studio-400">SIMULASI</span>
               </h1>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-studio-200/90 leading-relaxed font-medium">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 leading-relaxed font-medium">
               <p>
                 Simulasi Studio operates at the intersection of traditional craftsmanship and digital innovation. We are an artist-run screen printing collective focused on pushing the boundaries of what physical production can achieve in a virtual world.
               </p>
@@ -56,7 +56,7 @@ export default function AboutPage() {
         {/* Highlight Section: 4-Column Detail Grid */}
         <section className="py-20 border-t border-studio-800">
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-white uppercase tracking-tight">Technical Details</h2>
+            <h2 className="text-2xl font-bold uppercase tracking-tight">Technical Details</h2>
             <p className="text-studio-400 text-sm font-mono mt-2">PROCESS_DOCUMENTATION // ARCHIVE_V1</p>
           </div>
 
@@ -69,7 +69,7 @@ export default function AboutPage() {
                   fill
                   className="object-cover opacity-60 transition-transform duration-500 group-hover:scale-110 group-hover:opacity-80"
                 />
-                <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-studio-950 to-transparent">
+                <div className="absolute inset-x-0 bottom-0 p-4 bg-linear-to-t from-studio-950 to-transparent">
                   <div className="text-[10px] font-mono text-studio-300">STEP_0{i}</div>
                   <div className="text-xs font-bold text-white mt-1 uppercase">Process Detail {i}</div>
                 </div>
