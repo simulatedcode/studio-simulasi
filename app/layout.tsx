@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SwupProvider from "@/components/SwupProvider";
 import LenisProvider from "@/components/LenisProvider";
+import GoogleAnalytics from "@/app/lib/google-analytics";
+import ConsentBanner from "./lib/consent-banner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +44,8 @@ export default function RootLayout({
             <main id="swup">
               {children}
             </main>
+            <ConsentBanner />
+            {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics />}
             <Footer />
           </SwupProvider>
         </LenisProvider>

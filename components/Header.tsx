@@ -85,8 +85,8 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-8 items-center text-lg font-medium ">
-            <Link href="/#work" className="hover:text-studio-400 text-studio-900 transition-colors">Work</Link>
-            <Link href="/#process" className="hover:text-studio-400 text-studio-900 transition-colors">Process</Link>
+            <Link href="/work" className="hover:text-studio-400 text-studio-900 transition-colors">Work</Link>
+            <Link href="/process" className="hover:text-studio-400 text-studio-900 transition-colors">Process</Link>
             <Link href="/design" className="hover:text-studio-400 text-studio-900 transition-colors">Design</Link>
             <Link href="/about" className="hover:text-studio-400 text-studio-900 transition-colors">About</Link>
           </nav>

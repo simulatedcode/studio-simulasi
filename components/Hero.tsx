@@ -8,7 +8,7 @@ export default function Hero() {
                 <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-studio-900/10 bg-studio-900/5 px-4 backdrop-blur-md">
                     <span className="h-1 w-2 rounded-full bg-studio-400" />
                     <span className="text-xs font-bold uppercase tracking-widest text-studio-899">
-                        Documentation & Simulation
+                        Simulasi Studio
                     </span>
                 </div>
                 <h3 className="mb-4 text-3xl md:text-5xl lg:text-6xl font-black tracking-tight text-studio-950">
